@@ -1,0 +1,9 @@
+{
+  "nome": "erick",
+  "idade": 50,
+  "hobbies": ["tocar guitarra", "academia"],
+  "endereco": {
+    "rua": "rua x",
+    "bairro": "bairro y"
+  }
+}
