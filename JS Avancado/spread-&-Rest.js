@@ -7,8 +7,6 @@
 const numeros1 = [1,2,3]
 const numeros2 = [4,5,6]
 
-//Usando spread 
-
 const soma = [...numeros1, ...numeros2]
 
 console.log(soma) // [ 1, 2, 3, 4, 5, 6 ]

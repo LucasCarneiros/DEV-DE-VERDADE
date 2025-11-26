@@ -1,4 +1,4 @@
-//FOR OF é usada para iterar arrays
+//FOR OF é usada para iterar valores de arrays
 
 const numeros = [1,2,3,4,5]
 
