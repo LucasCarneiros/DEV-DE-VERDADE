@@ -120,18 +120,24 @@ const promessa = createOrder(cart);
 
 //catch() é executado somente se a Promise chamar reject().
 
+//Se usarmos um unico catch no final da cadeia de promessas, ele vai servir para todos os erros
+
 promessa.then(function(orderId){
   console.log(orderId)
-  return orderId //Porque retornar o orderId aqui?
+  return orderId 
+})
+.catch(function(err){
+  console.log(err.message)
 })
 .then(function(orderId){
   return proceedToPayment(orderId) //Aqui é tudo ficticio entao n criamos uma logica para proceedToPayment
 })
+
 .then(function(paymentInfo){
   console.log(paymentInfo)
 })
-.catch(function(error){
-  console.log(error)
+.catch(function(err){
+  console.log(err.message)
 })
 
 
